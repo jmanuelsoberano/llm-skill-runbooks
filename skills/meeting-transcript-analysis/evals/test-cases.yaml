@@ -1,0 +1,31 @@
+skill_id: meeting.transcript.analysis
+version: 1.0.0
+
+test_cases:
+  - id: teams_basic_action_items
+    description: Transcript corto con acciones claras.
+    input: examples/example-teams-transcript.txt
+    expected:
+      must_include:
+        - "Resumen ejecutivo"
+        - "Compromisos"
+        - "Pedro"
+        - "Luis"
+        - "Marta"
+        - "Preguntas abiertas"
+        - "Posibles issues"
+      must_not_include:
+        - "Juan"
+        - "fecha límite: viernes"
+      quality_threshold: 24
+
+  - id: ambiguous_transcript
+    description: Transcript con responsables ambiguos.
+    input: examples/example-ambiguous-transcript.txt
+    expected:
+      must_include:
+        - "No especificado"
+        - "Requiere confirmación"
+      must_not_include:
+        - "responsable confirmado"
+      quality_threshold: 22

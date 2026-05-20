@@ -1,0 +1,19 @@
+00:00:01 Ana: Buenos días. La idea de esta reunión es revisar lo que falta para cerrar la integración del portal con el repositorio de reportes.
+
+00:00:18 Luis: Sí, principalmente falta confirmar si el endpoint de reportes ya va a regresar el campo de estatus y la fecha de última actualización.
+
+00:00:42 Marta: De negocio necesitamos que el usuario pueda ver el estatus antes de descargar el reporte. Si no, soporte recibe muchos tickets.
+
+00:01:10 Ana: Entonces queda como requerimiento mostrar el estatus del reporte en pantalla.
+
+00:01:25 Luis: Para eso necesitamos modificar el backend y posiblemente agregar una columna en la tabla de reportes. No sé si ya existe.
+
+00:01:55 Pedro: Yo puedo revisar el modelo de datos mañana.
+
+00:02:10 Marta: También necesitamos confirmar con seguridad si el estatus puede mostrarse a todos los roles o solo a administradores.
+
+00:02:30 Ana: De acuerdo. Pedro revisa base de datos. Luis revisa endpoint. Marta confirma regla con seguridad.
+
+00:03:00 Luis: Si la API ya trae el campo, sería rápido. Si no, tardaría más porque hay que coordinar con el equipo de integraciones.
+
+00:03:30 Ana: Dejamos pendiente la estimación hasta que Luis confirme eso.

@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Prompt Skill Metadata",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "version",
+    "status",
+    "category",
+    "tags",
+    "input_types",
+    "output_formats"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(\\.[a-z0-9]+)+$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "experimental",
+        "stable",
+        "deprecated"
+      ]
+    },
+    "category": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "input_types": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "output_formats": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "llm_compatibility": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

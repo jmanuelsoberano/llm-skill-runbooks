@@ -1,0 +1,4 @@
+00:00 Ana: Tenemos que arreglar lo de los accesos.
+00:20 Voz 2: Sí, eso quedó pendiente desde la vez pasada.
+00:45 Ana: Alguien debería revisar si es tema de permisos o configuración.
+01:10 Voz 3: Lo vemos y te avisamos.

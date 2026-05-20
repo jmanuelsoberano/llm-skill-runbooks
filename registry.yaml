@@ -1,0 +1,66 @@
+repository:
+  name: prompt-skills-starter-kit
+  language: es
+  version: 1.0.0
+  description: Repositorio base de skills de prompts reutilizables entre LLMs.
+
+skills:
+  - id: meeting.transcript.analysis
+    name: Análisis de transcripts de reuniones
+    path: skills/meeting-transcript-analysis
+    version: 1.0.0
+    status: stable
+    category: meetings
+    input_types:
+      - text
+      - file
+      - txt
+      - docx
+      - pdf
+      - vtt
+      - csv
+    output_formats:
+      - markdown
+    tags:
+      - teams
+      - transcript
+      - reuniones
+      - compromisos
+      - requerimientos
+      - issues
+
+  - id: repository.issue.generator
+    name: Generador de issues para repositorio
+    path: skills/repository-issue-generator
+    version: 0.1.0
+    status: draft
+    category: software
+    input_types:
+      - markdown
+      - text
+    output_formats:
+      - markdown
+      - yaml
+    tags:
+      - github
+      - gitlab
+      - issues
+      - tareas
+      - backlog
+
+  - id: technical.requirements.extractor
+    name: Extractor de requerimientos técnicos
+    path: skills/technical-requirements-extractor
+    version: 0.1.0
+    status: draft
+    category: software
+    input_types:
+      - markdown
+      - text
+    output_formats:
+      - markdown
+    tags:
+      - requerimientos
+      - arquitectura
+      - sistemas
+      - documentación

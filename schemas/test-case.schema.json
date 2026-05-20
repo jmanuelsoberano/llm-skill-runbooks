@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Prompt Skill Test Case",
+  "type": "object",
+  "required": [
+    "skill_id",
+    "test_cases"
+  ],
+  "properties": {
+    "skill_id": {
+      "type": "string"
+    },
+    "test_cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "description",
+          "input",
+          "expected"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "input": {
+            "type": "string"
+          },
+          "expected": {
+            "type": "object",
+            "properties": {
+              "must_include": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "must_not_include": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "quality_threshold": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
