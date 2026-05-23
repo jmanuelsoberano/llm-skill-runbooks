@@ -64,3 +64,23 @@ skills:
       - arquitectura
       - sistemas
       - documentación
+
+  - id: repository.initialization
+    name: Inicialización de repositorios
+    path: skills/repository-initialization
+    version: 0.1.0
+    status: draft
+    category: repository-management
+    input_types:
+      - text
+      - markdown
+      - file
+    output_formats:
+      - markdown
+    tags:
+      - git
+      - repositorios
+      - inicializacion
+      - documentacion
+      - llm
+      - templates
