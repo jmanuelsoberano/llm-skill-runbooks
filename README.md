@@ -61,6 +61,15 @@ prompt-skills-starter-kit/
 
 ---
 
+## Skills disponibles
+
+| Skill | Estado | Ubicación | Uso principal |
+|---|---|---|---|
+| Análisis de transcripts de reuniones | stable | `skills/meeting-transcript-analysis/` | Convertir transcripts en documentos Markdown accionables. |
+| Inicialización de repositorios | draft | `skills/repository-initialization/` | Crear estructura base, documentación inicial y checklist para nuevos repositorios Git. |
+
+---
+
 ## Skill inicial incluida
 
 Este starter kit incluye una skill completa:
