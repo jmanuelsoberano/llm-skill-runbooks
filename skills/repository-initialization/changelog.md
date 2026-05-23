@@ -4,9 +4,23 @@
 
 ### Added
 
-- Definición inicial de la skill.
+- Definición inicial de la skill `repository.initialization`.
+- Metadata compatible con el registro del repositorio.
 - Contratos de entrada y salida.
-- Prompts completo, rápido y con contexto adjunto.
-- Plantillas base para repositorios.
+- Prompt completo para inicialización guiada.
+- Prompt rápido para inicialización mínima.
+- Prompt para trabajar con archivos o contexto adjunto.
+- Plantillas base para `README.md`, contexto, estructura, decisiones, changelog, TODO y guía para LLMs.
 - Ejemplos para repositorios de código, documentación y aplicación.
 - Checklist de evaluación.
+
+### Improved
+
+- Se ampliaron las plantillas base para reducir ambigüedad.
+- Se fortalecieron reglas de manejo de incertidumbre.
+- Se agregaron recomendaciones de trazabilidad y seguridad.
+- Se mejoraron ejemplos con propósito, estructura y notas de mantenimiento.
+
+### Removed
+
+- Se eliminó el archivo temporal `.gitkeep` usado para crear la carpeta inicial.
