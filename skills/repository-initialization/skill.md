@@ -1,7 +1,7 @@
 ---
 id: repository.initialization
 name: Inicialización de repositorios
-version: 0.1.0
+version: 0.2.0
 status: draft
 category: repository-management
 tags:
@@ -53,6 +53,21 @@ Usa esta skill cuando:
 - Repositorios de prompts o skills.
 - Repositorios mixtos.
 
+## Patrones de estructura soportados
+
+Antes de proponer carpetas, clasifica el repositorio en uno de estos patrones:
+
+| Patrón | Cuándo aplica |
+|---|---|
+| `docs-only` | El valor principal son documentos, guías, runbooks o referencias. |
+| `code-library` | Librería, paquete, utilidad o servicio pequeño con código fuente y pruebas. |
+| `split-frontend-backend` | Frontend y backend son proyectos separados con dependencias, builds o despliegues distintos. |
+| `single-src-layered` | Todo vive bajo una carpeta principal como `src/`, con capas internas: dominio, aplicación, infraestructura, web, UI o presentación. |
+| `framework-native` | Conviene respetar la estructura generada o recomendada por un framework como Django, Angular, React, Next.js o .NET. |
+| `monorepo-workspace` | Hay varias apps, paquetes o librerías en un mismo repositorio. |
+| `prompt-skill-repo` | El repositorio almacena prompts, skills, runbooks o plantillas para LLMs. |
+| `mixed` | Combina varios patrones y requiere explicación explícita. |
+
 ## Cuándo no usarla
 
 No es la mejor opción cuando:
@@ -79,19 +94,21 @@ No es la mejor opción cuando:
 
 1. Recolectar contexto mínimo del repositorio.
 2. Clasificar el tipo de repositorio.
-3. Detectar datos faltantes.
-4. Proponer estructura inicial.
-5. Seleccionar documentos base.
-6. Sugerir `.gitignore` inicial cuando aplique.
-7. Registrar decisiones iniciales.
-8. Preparar checklist de arranque.
-9. Sugerir primer commit.
+3. Clasificar el patrón estructural más adecuado.
+4. Detectar datos faltantes.
+5. Proponer estructura inicial proporcional al patrón elegido.
+6. Seleccionar documentos base.
+7. Sugerir `.gitignore` inicial cuando aplique.
+8. Registrar decisiones iniciales.
+9. Preparar checklist de arranque.
+10. Sugerir primer commit.
 
 ## Resultado esperado
 
 Al finalizar la aplicación de esta skill, el repositorio debe tener:
 
 - propósito claro;
+- patrón estructural identificado;
 - estructura inicial entendible;
 - documentos base sugeridos;
 - decisiones iniciales registradas;

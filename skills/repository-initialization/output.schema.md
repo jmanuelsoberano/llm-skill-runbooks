@@ -8,13 +8,25 @@ La skill debe producir una propuesta de inicialización en Markdown, lista para 
 
 1. `Resumen del repositorio`
 2. `Tipo de repositorio identificado`
-3. `Supuestos e incertidumbres`
-4. `Estructura propuesta`
-5. `Archivos base sugeridos`
-6. `Decisiones iniciales recomendadas`
-7. `Checklist de arranque`
-8. `Primer commit sugerido`
-9. `Siguientes pasos`
+3. `Patrón estructural recomendado`
+4. `Supuestos e incertidumbres`
+5. `Estructura propuesta`
+6. `Archivos base sugeridos`
+7. `Decisiones iniciales recomendadas`
+8. `Checklist de arranque`
+9. `Primer commit sugerido`
+10. `Siguientes pasos`
+
+## Patrones estructurales permitidos
+
+- `docs-only`
+- `code-library`
+- `split-frontend-backend`
+- `single-src-layered`
+- `framework-native`
+- `monorepo-workspace`
+- `prompt-skill-repo`
+- `mixed`
 
 ## Secciones opcionales
 
@@ -38,6 +50,7 @@ Usar estos valores cuando aplique:
 - No inventar información como si fuera confirmada.
 - Separar hechos, inferencias y pendientes.
 - No recomendar estructuras excesivas si el repositorio es pequeño.
+- No forzar `frontend/` y `backend/` si el patrón adecuado es `single-src-layered`, `framework-native` o `monorepo-workspace`.
 - No mezclar decisiones tomadas con decisiones sugeridas.
 - No incluir secretos o datos sensibles.
 - Sugerir nombres de archivos claros y consistentes.

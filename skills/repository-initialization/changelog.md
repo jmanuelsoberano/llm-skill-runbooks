@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.2.0 - Patrones de estructura de aplicaciones
+
+### Added
+
+- Clasificación explícita por patrón estructural antes de proponer carpetas.
+- Patrones soportados: `docs-only`, `code-library`, `split-frontend-backend`, `single-src-layered`, `framework-native`, `monorepo-workspace`, `prompt-skill-repo` y `mixed`.
+- Ejemplo para aplicaciones con frontend y backend separados.
+- Ejemplo para aplicaciones con `src/` y capas internas.
+- Ejemplo para aplicaciones que respetan la estructura nativa del framework.
+- Ejemplo para monorepos o workspaces.
+
+### Improved
+
+- El prompt completo ahora pide clasificar el patrón estructural y justificarlo.
+- El prompt rápido ahora incluye patrón estructural recomendado.
+- El prompt con contexto adjunto ahora infiere el patrón a partir de archivos o árbol existente.
+- El contrato de salida ahora exige `Patrón estructural recomendado`.
+- La checklist ahora valida que no se fuerce `frontend/` y `backend/` cuando no corresponde.
+
+---
+
 ## 0.1.0 - Draft inicial
 
 ### Added
