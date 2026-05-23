@@ -1,21 +1,36 @@
 # Prompt rápido
 
-Ayúdame a inicializar este repositorio.
+Ayúdame a inicializar este repositorio de forma simple y ordenada.
 
-Datos disponibles:
+## Datos disponibles
 
 - Tipo de repositorio:
 - Propósito:
 - Audiencia:
 - Tecnologías:
 - Restricciones:
+- Contenido inicial:
 
-Devuélveme:
+## Instrucciones
 
-1. Estructura mínima recomendada.
-2. Archivos base a crear.
-3. Preguntas pendientes importantes.
-4. Checklist de arranque.
-5. Primer commit sugerido.
+1. Identifica si falta información importante.
+2. Propón una estructura mínima, no sobrediseñada.
+3. Indica qué documentos base debo crear.
+4. Sugiere qué decisiones conviene registrar desde el inicio.
+5. Dame un checklist corto de arranque.
+6. Sugiere el primer commit.
 
-Usa Markdown. No inventes información que no te haya dado.
+## Reglas
+
+- Usa Markdown.
+- No inventes información que no te haya dado.
+- Marca dudas como `Pendiente`, `Ambiguo` o `Requiere confirmación`.
+- Mantén la respuesta práctica y accionable.
+
+## Salida esperada
+
+- Resumen entendido.
+- Estructura mínima.
+- Archivos base.
+- Pendientes.
+- Primer commit sugerido.
