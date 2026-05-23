@@ -11,6 +11,7 @@
 - Prompt rápido para inicialización mínima.
 - Prompt para trabajar con archivos o contexto adjunto.
 - Plantillas base para `README.md`, contexto, estructura, decisiones, changelog, TODO y guía para LLMs.
+- Plantilla de referencia para `.gitignore`.
 - Ejemplos para repositorios de código, documentación y aplicación.
 - Checklist de evaluación.
 
@@ -20,6 +21,7 @@
 - Se fortalecieron reglas de manejo de incertidumbre.
 - Se agregaron recomendaciones de trazabilidad y seguridad.
 - Se mejoraron ejemplos con propósito, estructura y notas de mantenimiento.
+- Se alineó el prompt rápido con el contrato de salida de la skill.
 
 ### Removed
 
