@@ -1,19 +1,59 @@
-# Decisiones
+# Decisiones del Proyecto
 
-## Formato
+Este archivo registra decisiones importantes para que el repositorio conserve trazabilidad.
 
-### Fecha - Título
+## Cuándo registrar una decisión
 
-Contexto:
+Registra una decisión cuando afecte:
 
-Decisión:
+- estructura de carpetas;
+- convenciones de nombres;
+- herramientas principales;
+- forma de trabajar;
+- alcance del repositorio;
+- reglas para documentación;
+- criterios de mantenimiento.
 
-Consecuencias:
+## Formato recomendado
 
-Estado:
+```md
+## YYYY-MM-DD - Título de la decisión
+
+### Contexto
+
+¿Por qué se necesitó decidir esto?
+
+### Decisión
+
+¿Qué se decidió?
+
+### Consecuencias
+
+¿Qué beneficios, límites o riesgos implica?
+
+### Estado
+
+Aceptada / Pendiente / Reemplazada
+```
 
 ---
 
 ## Registro
 
-Pendiente.
+## YYYY-MM-DD - Inicialización del repositorio
+
+### Contexto
+
+Se requiere una base mínima para iniciar el repositorio de forma ordenada.
+
+### Decisión
+
+Usar documentos base para contexto, estructura, decisiones, cambios, pendientes y colaboración con asistentes.
+
+### Consecuencias
+
+El repositorio será más fácil de entender, mantener y evolucionar.
+
+### Estado
+
+Aceptada
