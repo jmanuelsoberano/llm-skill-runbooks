@@ -18,22 +18,39 @@ Usa la información disponible sobre:
 - restricciones;
 - visibilidad;
 - nivel de formalidad;
-- estrategia de versionado.
+- estrategia de versionado;
+- framework o stack tecnológico, si existe;
+- si frontend y backend son proyectos separados o capas internas.
 
 Si falta información, no te detengas automáticamente. Marca lo faltante y pregunta solo lo mínimo indispensable.
+
+## Patrones estructurales
+
+Antes de proponer carpetas, clasifica el repositorio en un patrón:
+
+- `docs-only`
+- `code-library`
+- `split-frontend-backend`
+- `single-src-layered`
+- `framework-native`
+- `monorepo-workspace`
+- `prompt-skill-repo`
+- `mixed`
 
 ## Proceso
 
 1. Identifica el tipo principal de repositorio.
 2. Resume el propósito entendido.
-3. Detecta información faltante o ambigua.
-4. Propón una estructura inicial proporcional al tamaño del proyecto.
-5. Indica qué archivos base conviene crear.
-6. Sugiere contenido inicial para esos archivos.
-7. Propón decisiones iniciales para registrar.
-8. Define un checklist de arranque.
-9. Sugiere el primer commit.
-10. Indica próximos pasos.
+3. Clasifica el patrón estructural recomendado.
+4. Explica por qué ese patrón aplica.
+5. Detecta información faltante o ambigua.
+6. Propón una estructura inicial proporcional al tamaño del proyecto y al patrón elegido.
+7. Indica qué archivos base conviene crear.
+8. Sugiere contenido inicial para esos archivos.
+9. Propón decisiones iniciales para registrar.
+10. Define un checklist de arranque.
+11. Sugiere el primer commit.
+12. Indica próximos pasos.
 
 ## Reglas
 
@@ -44,6 +61,8 @@ Si falta información, no te detengas automáticamente. Marca lo faltante y preg
 - Mantén la propuesta fácil de mantener.
 - No incluyas secretos, tokens, llaves o datos sensibles.
 - Prefiere nombres de carpetas claros y convencionales.
+- No fuerces `frontend/` y `backend/` si el frontend está integrado como capa interna o si el framework define otra estructura.
+- Respeta estructuras nativas del framework salvo que exista una razón documentada para cambiarlas.
 
 ## Formato de salida
 
@@ -51,13 +70,14 @@ Devuelve Markdown con estas secciones:
 
 1. Resumen del repositorio.
 2. Tipo de repositorio identificado.
-3. Supuestos e incertidumbres.
-4. Estructura propuesta.
-5. Archivos base sugeridos.
-6. Decisiones iniciales recomendadas.
-7. Checklist de arranque.
-8. Primer commit sugerido.
-9. Siguientes pasos.
+3. Patrón estructural recomendado.
+4. Supuestos e incertidumbres.
+5. Estructura propuesta.
+6. Archivos base sugeridos.
+7. Decisiones iniciales recomendadas.
+8. Checklist de arranque.
+9. Primer commit sugerido.
+10. Siguientes pasos.
 
 ## Criterio de calidad
 
