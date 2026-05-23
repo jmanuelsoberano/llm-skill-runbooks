@@ -70,6 +70,7 @@ No es la mejor opción cuando:
 - `prompt.quick.md`
 - `prompt.file-input.md`
 - `templates/`
+- `templates/GITIGNORE.md`
 - `examples/`
 - `evals/checklist.md`
 - `changelog.md`
@@ -81,9 +82,10 @@ No es la mejor opción cuando:
 3. Detectar datos faltantes.
 4. Proponer estructura inicial.
 5. Seleccionar documentos base.
-6. Registrar decisiones iniciales.
-7. Preparar checklist de arranque.
-8. Sugerir primer commit.
+6. Sugerir `.gitignore` inicial cuando aplique.
+7. Registrar decisiones iniciales.
+8. Preparar checklist de arranque.
+9. Sugerir primer commit.
 
 ## Resultado esperado
 
@@ -95,4 +97,5 @@ Al finalizar la aplicación de esta skill, el repositorio debe tener:
 - decisiones iniciales registradas;
 - pendientes visibles;
 - reglas mínimas para colaboración con LLMs;
+- sugerencia de `.gitignore` cuando aplique;
 - mensaje de commit inicial recomendado.
