@@ -10,7 +10,15 @@ Usa este checklist para revisar si la salida de la skill sirve como base real pa
 - [ ] Marca información ambigua o pendiente.
 - [ ] No inventa tecnologías, responsables ni restricciones.
 
-## 2. Estructura propuesta
+## 2. Patrón estructural
+
+- [ ] Clasifica el repositorio en un patrón estructural explícito.
+- [ ] Justifica por qué el patrón aplica.
+- [ ] No fuerza `frontend/` y `backend/` si el repo indica una estructura integrada.
+- [ ] Respeta estructuras nativas de frameworks cuando corresponde.
+- [ ] Usa `mixed` solo cuando realmente combina varios patrones.
+
+## 3. Estructura propuesta
 
 - [ ] Propone una estructura proporcional al tamaño del proyecto.
 - [ ] Evita complejidad innecesaria.
@@ -18,7 +26,7 @@ Usa este checklist para revisar si la salida de la skill sirve como base real pa
 - [ ] Explica para qué sirve cada archivo o carpeta importante.
 - [ ] Sugiere qué carpetas conviene evitar por ahora, si aplica.
 
-## 3. Documentación base
+## 4. Documentación base
 
 - [ ] Incluye `README.md`.
 - [ ] Incluye `PROJECT_CONTEXT.md`.
@@ -28,20 +36,20 @@ Usa este checklist para revisar si la salida de la skill sirve como base real pa
 - [ ] Incluye `TODO.md`.
 - [ ] Incluye `LLM_GUIDE.md` cuando el repositorio será trabajado con asistentes.
 
-## 4. Decisiones y trazabilidad
+## 5. Decisiones y trazabilidad
 
 - [ ] Sugiere decisiones iniciales para registrar.
 - [ ] No mezcla decisiones tomadas con decisiones sugeridas.
 - [ ] Indica consecuencias o razones de las decisiones importantes.
 - [ ] Propone cómo mantener el changelog.
 
-## 5. Seguridad y cuidado
+## 6. Seguridad y cuidado
 
 - [ ] No solicita ni expone secretos.
 - [ ] Recomienda no versionar tokens, contraseñas o llaves.
 - [ ] Señala si hay contenido sensible que debe excluirse.
 
-## 6. Accionabilidad
+## 7. Accionabilidad
 
 - [ ] Incluye checklist de arranque.
 - [ ] Sugiere un primer commit claro.
