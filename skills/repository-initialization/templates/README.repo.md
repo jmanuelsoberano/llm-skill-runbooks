@@ -22,6 +22,18 @@ Seleccionar o ajustar:
 - Prompts o skills
 - Mixto
 
+## Patrón estructural
+
+Pendiente de definir.
+
+Ejemplos: `docs-only`, `code-library`, `split-frontend-backend`, `single-src-layered`, `framework-native`, `monorepo-workspace`, `prompt-skill-repo`, `mixed`.
+
+## Perfil de pruebas
+
+Pendiente de definir.
+
+Ejemplos: `no-code-validation`, `unit-only`, `unit-plus-integration`, `layered-testing`, `frontend-component-testing`, `api-contract-testing`, `e2e-critical-flows`, `full-quality-gate`, `custom`.
+
 ## Contenido principal
 
 Describe qué tipo de archivos, carpetas o entregables se mantendrán aquí.
@@ -50,6 +62,7 @@ cd <nombre-del-repositorio>
 |---|---|
 | `PROJECT_CONTEXT.md` | Contexto vivo del proyecto. |
 | `STRUCTURE.md` | Explicación de carpetas y archivos. |
+| `TEST_STRATEGY.md` | Estrategia inicial de pruebas y validaciones. |
 | `DECISIONS.md` | Registro de decisiones importantes. |
 | `CHANGELOG.md` | Cambios relevantes. |
 | `TODO.md` | Pendientes y próximos pasos. |
@@ -63,4 +76,6 @@ Inicial / En desarrollo / Estable / Archivado.
 
 - [ ] Completar contexto.
 - [ ] Revisar estructura.
+- [ ] Definir patrón estructural.
+- [ ] Definir estrategia de pruebas si aplica.
 - [ ] Registrar decisiones iniciales.

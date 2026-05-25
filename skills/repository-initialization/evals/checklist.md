@@ -18,7 +18,18 @@ Usa este checklist para revisar si la salida de la skill sirve como base real pa
 - [ ] Respeta estructuras nativas de frameworks cuando corresponde.
 - [ ] Usa `mixed` solo cuando realmente combina varios patrones.
 
-## 3. Estructura propuesta
+## 3. Perfil y estrategia de pruebas
+
+- [ ] Clasifica el perfil de pruebas inicial.
+- [ ] Justifica por qué ese perfil aplica.
+- [ ] No propone todos los tipos de pruebas por default.
+- [ ] Ajusta la estrategia de pruebas al riesgo, stack, dependencias y patrón estructural.
+- [ ] Incluye `TEST_STRATEGY.md` cuando el repositorio tendrá código, validaciones o reglas de calidad.
+- [ ] Distingue pruebas necesarias ahora, pruebas futuras y pruebas que no aplican.
+- [ ] Propone E2E solo para flujos críticos o cuando el riesgo lo justifica.
+- [ ] Para repos sin código, propone validaciones documentales, ejemplos o checklists en lugar de pruebas de aplicación.
+
+## 4. Estructura propuesta
 
 - [ ] Propone una estructura proporcional al tamaño del proyecto.
 - [ ] Evita complejidad innecesaria.
@@ -26,7 +37,7 @@ Usa este checklist para revisar si la salida de la skill sirve como base real pa
 - [ ] Explica para qué sirve cada archivo o carpeta importante.
 - [ ] Sugiere qué carpetas conviene evitar por ahora, si aplica.
 
-## 4. Documentación base
+## 5. Documentación base
 
 - [ ] Incluye `README.md`.
 - [ ] Incluye `PROJECT_CONTEXT.md`.
@@ -35,21 +46,24 @@ Usa este checklist para revisar si la salida de la skill sirve como base real pa
 - [ ] Incluye `CHANGELOG.md`.
 - [ ] Incluye `TODO.md`.
 - [ ] Incluye `LLM_GUIDE.md` cuando el repositorio será trabajado con asistentes.
+- [ ] Incluye `TEST_STRATEGY.md` cuando aplique.
 
-## 5. Decisiones y trazabilidad
+## 6. Decisiones y trazabilidad
 
 - [ ] Sugiere decisiones iniciales para registrar.
+- [ ] Incluye decisiones de pruebas cuando se define una estrategia.
 - [ ] No mezcla decisiones tomadas con decisiones sugeridas.
 - [ ] Indica consecuencias o razones de las decisiones importantes.
 - [ ] Propone cómo mantener el changelog.
 
-## 6. Seguridad y cuidado
+## 7. Seguridad y cuidado
 
 - [ ] No solicita ni expone secretos.
 - [ ] Recomienda no versionar tokens, contraseñas o llaves.
 - [ ] Señala si hay contenido sensible que debe excluirse.
+- [ ] Considera pruebas o validaciones de seguridad si hay autenticación, permisos o datos sensibles.
 
-## 7. Accionabilidad
+## 8. Accionabilidad
 
 - [ ] Incluye checklist de arranque.
 - [ ] Sugiere un primer commit claro.
