@@ -4,7 +4,7 @@ Voy a adjuntar archivos, notas, un árbol de carpetas o una estructura existente
 
 ## Objetivo
 
-Analiza el material proporcionado y ayúdame a convertirlo en una base clara para un repositorio versionado en Git.
+Analiza el material proporcionado y ayúdame a convertirlo en una base clara para un repositorio versionado en Git, incluyendo una estrategia inicial de pruebas proporcional al tipo de proyecto.
 
 ## Instrucciones
 
@@ -13,12 +13,14 @@ Analiza el material proporcionado y ayúdame a convertirlo en una base clara par
 3. Distingue contenido útil, duplicado, dudoso o fuera de alcance.
 4. Identifica el patrón estructural más probable.
 5. Explica si la estructura debe ser `split-frontend-backend`, `single-src-layered`, `framework-native`, `monorepo-workspace` u otra.
-6. Propón una estructura inicial.
-7. Indica qué documentos base hacen falta.
-8. Sugiere qué contenido debería ir en cada documento.
-9. Identifica decisiones iniciales que deberían registrarse.
-10. Señala archivos o carpetas que conviene evitar por ahora.
-11. Sugiere un primer commit.
+6. Identifica el perfil de pruebas más probable.
+7. Explica qué señales del material justifican ese perfil de pruebas.
+8. Propón una estructura inicial.
+9. Indica qué documentos base hacen falta, incluyendo `TEST_STRATEGY.md` si aplica.
+10. Sugiere qué contenido debería ir en cada documento.
+11. Identifica decisiones iniciales que deberían registrarse.
+12. Señala archivos o carpetas que conviene evitar por ahora.
+13. Sugiere un primer commit.
 
 ## Reglas
 
@@ -29,14 +31,18 @@ Analiza el material proporcionado y ayúdame a convertirlo en una base clara par
 - Marca inferencias como `Inferencia`.
 - Mantén la salida en Markdown.
 - No fuerces `frontend/` y `backend/` si el material indica una estructura integrada, nativa del framework o de workspace.
+- No propongas todos los tipos de pruebas por default.
+- Si no hay código productivo, recomienda validaciones documentales o de ejemplos en lugar de pruebas de aplicación.
 
 ## Salida esperada
 
 - Diagnóstico del material recibido.
 - Tipo de repositorio identificado.
 - Patrón estructural recomendado.
+- Perfil de pruebas recomendado.
 - Estructura recomendada.
 - Archivos base.
+- Estrategia de pruebas inicial.
 - Decisiones sugeridas.
 - Riesgos o pendientes.
 - Primer commit sugerido.
