@@ -8,6 +8,8 @@
 - Perfiles de pruebas soportados: `no-code-validation`, `unit-only`, `unit-plus-integration`, `layered-testing`, `frontend-component-testing`, `api-contract-testing`, `e2e-critical-flows`, `full-quality-gate` y `custom`.
 - Plantilla `TEST_STRATEGY.md` para documentar estrategia de pruebas, tipos aplicables, herramientas candidatas, exclusiones y reglas para LLMs.
 - Campos de entrada para criticidad, dependencias externas, UI, API, preferencias y restricciones de pruebas.
+- Ejemplo `testing-profiles-example.md` para orientar la selección del perfil de pruebas.
+- Ejemplo `testing-by-structure-pattern-example.md` para conectar patrón estructural y estrategia de pruebas.
 
 ### Improved
 
