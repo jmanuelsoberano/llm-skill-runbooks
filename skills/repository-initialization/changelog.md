@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.3.0 - Descubrimiento de estrategia de pruebas
+
+### Added
+
+- Descubrimiento explícito del perfil inicial de pruebas durante la inicialización del repositorio.
+- Perfiles de pruebas soportados: `no-code-validation`, `unit-only`, `unit-plus-integration`, `layered-testing`, `frontend-component-testing`, `api-contract-testing`, `e2e-critical-flows`, `full-quality-gate` y `custom`.
+- Plantilla `TEST_STRATEGY.md` para documentar estrategia de pruebas, tipos aplicables, herramientas candidatas, exclusiones y reglas para LLMs.
+- Campos de entrada para criticidad, dependencias externas, UI, API, preferencias y restricciones de pruebas.
+
+### Improved
+
+- El contrato de salida ahora exige `Perfil de pruebas recomendado` y `Estrategia de pruebas inicial`.
+- Los prompts ahora piden descubrir la estrategia de pruebas como parte del flujo guiado.
+- La checklist ahora valida proporcionalidad de pruebas y evita proponer todos los tipos por default.
+- `LLM_GUIDE.md` ahora indica revisar `TEST_STRATEGY.md` antes de crear o modificar pruebas.
+- `registry.yaml` actualiza la skill a `0.3.0` y agrega el tag `pruebas`.
+
+---
+
 ## 0.2.0 - Patrones de estructura de aplicaciones
 
 ### Added
