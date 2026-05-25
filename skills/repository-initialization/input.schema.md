@@ -19,6 +19,9 @@
 | requiere_api | No | Indica si expone endpoints o contratos consumidos por otros. | `sí, REST API` |
 | estrategia_pruebas_deseada | No | Perfil de pruebas esperado si ya se conoce. | `layered-testing` |
 | restricciones_pruebas | No | Restricciones para pruebas, mocks, BD, CI o herramientas. | `evitar mocks; usar BD en memoria` |
+| quality_gates_deseados | No | Perfil de validaciones automáticas esperado si ya se conoce. | `format-lint-test` |
+| herramientas_calidad | No | Herramientas de formato, lint, hooks, CI o análisis ya preferidas. | `pre-commit, ESLint, dotnet format` |
+| restricciones_quality_gates | No | Restricciones para hooks, CI, tiempos de ejecución o herramientas. | `no correr E2E en pre-commit` |
 
 ## Formatos aceptados
 
@@ -29,6 +32,7 @@
 - Descripción conversacional.
 - Árbol de carpetas existente.
 - Notas sobre riesgos, dependencias o pruebas esperadas.
+- Notas sobre hooks, CI, linters, formato o reglas de arquitectura.
 
 ## Información sensible
 
@@ -65,3 +69,17 @@ Cuando no se indique estrategia de pruebas, inferir un perfil inicial usando:
 - dependencias externas;
 - necesidades de CI/CD;
 - restricciones del usuario.
+
+## Descubrimiento de quality gates
+
+Cuando no se indiquen quality gates, inferir un perfil inicial usando:
+
+- stack tecnológico;
+- perfil de pruebas;
+- patrón estructural;
+- criticidad;
+- herramientas conocidas del ecosistema;
+- necesidad de hooks locales;
+- necesidad de validaciones en PR/CI;
+- reglas de arquitectura o seguridad esperadas;
+- restricciones de tiempo para `pre-commit` y `pre-push`.
