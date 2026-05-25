@@ -13,6 +13,12 @@
 | nivel_formalidad | No | Ligero, medio o formal. | `medio` |
 | visibilidad | No | Público, privado, interno o equipo. | `privado` |
 | estrategia_versionado | No | Cómo se espera versionar cambios. | `commits pequeños y changelog` |
+| criticidad | No | Nivel de riesgo del repositorio o sistema. | `baja`, `media`, `alta` |
+| dependencias_externas | No | DB, APIs, archivos, colas, servicios externos o infraestructura. | `SQL Server, API externa` |
+| requiere_ui | No | Indica si hay interfaz de usuario significativa. | `sí, Angular` |
+| requiere_api | No | Indica si expone endpoints o contratos consumidos por otros. | `sí, REST API` |
+| estrategia_pruebas_deseada | No | Perfil de pruebas esperado si ya se conoce. | `layered-testing` |
+| restricciones_pruebas | No | Restricciones para pruebas, mocks, BD, CI o herramientas. | `evitar mocks; usar BD en memoria` |
 
 ## Formatos aceptados
 
@@ -22,6 +28,7 @@
 - Contexto adjunto.
 - Descripción conversacional.
 - Árbol de carpetas existente.
+- Notas sobre riesgos, dependencias o pruebas esperadas.
 
 ## Información sensible
 
@@ -44,3 +51,17 @@ Si falta información crítica, la salida debe:
 ## Supuestos permitidos
 
 Solo se permiten supuestos explícitos y etiquetados como `Inferencia`.
+
+## Descubrimiento de pruebas
+
+Cuando no se indique estrategia de pruebas, inferir un perfil inicial usando:
+
+- tipo de repositorio;
+- patrón estructural;
+- stack tecnológico;
+- criticidad;
+- presencia de UI;
+- presencia de API;
+- dependencias externas;
+- necesidades de CI/CD;
+- restricciones del usuario.
