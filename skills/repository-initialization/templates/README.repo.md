@@ -50,6 +50,7 @@ cd <nombre-del-repositorio>
 |---|---|
 | `PROJECT_CONTEXT.md` | Contexto vivo del proyecto. |
 | `STRUCTURE.md` | Explicación de carpetas y archivos. |
+| `TEST_STRATEGY.md` | Estrategia inicial de pruebas y validaciones. |
 | `DECISIONS.md` | Registro de decisiones importantes. |
 | `CHANGELOG.md` | Cambios relevantes. |
 | `TODO.md` | Pendientes y próximos pasos. |
@@ -63,4 +64,5 @@ Inicial / En desarrollo / Estable / Archivado.
 
 - [ ] Completar contexto.
 - [ ] Revisar estructura.
+- [ ] Definir estrategia de pruebas si aplica.
 - [ ] Registrar decisiones iniciales.
