@@ -1,0 +1,6 @@
+interface:
+  display_name: "Generador de issues para repositorio"
+  short_description: "Prepara backlog con criterios verificables"
+  default_prompt: "Usa $repository-issue-generator con el contexto proporcionado y conserva la trazabilidad."
+policy:
+  allow_implicit_invocation: true

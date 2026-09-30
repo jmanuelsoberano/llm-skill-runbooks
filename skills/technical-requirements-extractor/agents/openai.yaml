@@ -1,0 +1,6 @@
+interface:
+  display_name: "Extractor de requerimientos técnicos"
+  short_description: "Extrae requisitos y conserva incertidumbre"
+  default_prompt: "Usa $technical-requirements-extractor con el contexto proporcionado y conserva la trazabilidad."
+policy:
+  allow_implicit_invocation: true

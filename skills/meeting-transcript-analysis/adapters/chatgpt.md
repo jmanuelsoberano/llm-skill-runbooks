@@ -4,7 +4,7 @@
 
 - Para archivo adjunto, usa `prompt.file-input.md`.
 - Para transcript largo, usa `prompt.chunked-long-transcript.md`.
-- Para mejorar el prompt, proporciona también `skill.md`, `input.schema.md` y `output.schema.md`.
+- Para mejorar el prompt, proporciona también `SKILL.md`, `input.schema.md` y `output.schema.md`.
 
 ## Recomendación
 

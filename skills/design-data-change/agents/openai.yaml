@@ -1,0 +1,6 @@
+interface:
+  display_name: "Diseño de cambios de datos"
+  short_description: "Diseña cambios y migraciones con integridad"
+  default_prompt: "Usa $design-data-change para analizar el caso adjunto y entregar un resultado sustentado y accionable."
+policy:
+  allow_implicit_invocation: true

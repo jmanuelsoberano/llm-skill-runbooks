@@ -1,0 +1,27 @@
+{
+  "name": "engineering-research-suite",
+  "version": "0.1.0",
+  "evidence_contract_version": "1.0.0",
+  "skills": [
+    "evidence-guided-development",
+    "oreilly-research",
+    "create-decision-brief",
+    "forecast-project-delivery",
+    "assess-team-structure",
+    "compare-implementation-approaches",
+    "review-architecture-decision",
+    "review-technical-proposal",
+    "evaluate-security-risk",
+    "plan-service-reliability",
+    "plan-production-ready-ai",
+    "plan-domain-rampup",
+    "create-learning-plan",
+    "review-code-change",
+    "design-data-change",
+    "analyze-system-performance",
+    "investigate-technical-incident",
+    "design-test-strategy",
+    "technical-requirements-extractor",
+    "repository-issue-generator"
+  ]
+}

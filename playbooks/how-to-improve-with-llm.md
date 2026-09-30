@@ -9,7 +9,7 @@ Lee estos archivos:
 
 - AGENTS.md
 - conventions/prompt-style-guide.md
-- skills/[skill]/skill.md
+- skills/[skill]/SKILL.md
 - skills/[skill]/input.schema.md
 - skills/[skill]/output.schema.md
 - skills/[skill]/prompt.full.md

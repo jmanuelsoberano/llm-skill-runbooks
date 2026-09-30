@@ -1,87 +1,396 @@
 repository:
   name: prompt-skills-starter-kit
   language: es
-  version: 1.0.0
-  description: Repositorio base de skills de prompts reutilizables entre LLMs.
-
+  version: 1.2.0
+  description: 'Skillbook: catálogo de Agent Skills y prompts reutilizables entre
+    LLMs.'
 skills:
-  - id: meeting.transcript.analysis
-    name: Análisis de transcripts de reuniones
-    path: skills/meeting-transcript-analysis
-    version: 1.0.0
-    status: stable
-    category: meetings
-    input_types:
-      - text
-      - file
-      - txt
-      - docx
-      - pdf
-      - vtt
-      - csv
-    output_formats:
-      - markdown
-    tags:
-      - teams
-      - transcript
-      - reuniones
-      - compromisos
-      - requerimientos
-      - issues
-
-  - id: repository.issue.generator
-    name: Generador de issues para repositorio
-    path: skills/repository-issue-generator
-    version: 0.1.0
-    status: draft
-    category: software
-    input_types:
-      - markdown
-      - text
-    output_formats:
-      - markdown
-      - yaml
-    tags:
-      - github
-      - gitlab
-      - issues
-      - tareas
-      - backlog
-
-  - id: technical.requirements.extractor
-    name: Extractor de requerimientos técnicos
-    path: skills/technical-requirements-extractor
-    version: 0.1.0
-    status: draft
-    category: software
-    input_types:
-      - markdown
-      - text
-    output_formats:
-      - markdown
-    tags:
-      - requerimientos
-      - arquitectura
-      - sistemas
-      - documentación
-
-  - id: repository.initialization
-    name: Inicialización de repositorios
-    path: skills/repository-initialization
-    version: 0.3.0
-    status: draft
-    category: repository-management
-    input_types:
-      - text
-      - markdown
-      - file
-    output_formats:
-      - markdown
-    tags:
-      - git
-      - repositorios
-      - inicializacion
-      - documentacion
-      - pruebas
-      - llm
-      - templates
+- id: development.evidence.guided
+  name: Desarrollo con evidencia
+  path: skills/evidence-guided-development
+  version: 1.1.0
+  status: experimental
+  category: software
+  input_types:
+  - text
+  - markdown
+  - file
+  output_formats:
+  - markdown
+  tags:
+  - architecture
+  - migration
+  - performance
+  - oreilly
+  - refactoring
+  - business-rules
+  - user-stories
+- id: meeting.transcript.analysis
+  name: Análisis de transcripts de reuniones
+  path: skills/meeting-transcript-analysis
+  version: 1.1.0
+  status: stable
+  category: meetings
+  input_types:
+  - text
+  - file
+  - txt
+  - docx
+  - pdf
+  - vtt
+  - csv
+  output_formats:
+  - markdown
+  tags:
+  - teams
+  - transcript
+  - reuniones
+  - compromisos
+  - requerimientos
+  - issues
+  - resumen
+  llm_compatibility:
+  - generic-llm
+  - ChatGPT
+  - Claude
+  - Gemini
+  - Copilot
+- id: repository.issue.generator
+  name: Generador de issues para repositorio
+  path: skills/repository-issue-generator
+  version: 0.3.0
+  status: draft
+  category: software
+  input_types:
+  - markdown
+  - text
+  output_formats:
+  - markdown
+  - yaml
+  tags:
+  - github
+  - gitlab
+  - issues
+  - tareas
+  - backlog
+  llm_compatibility:
+  - generic-llm
+  - ChatGPT
+  - Claude
+  - Gemini
+- id: technical.requirements.extractor
+  name: Extractor de requerimientos técnicos
+  path: skills/technical-requirements-extractor
+  version: 0.3.0
+  status: draft
+  category: software
+  input_types:
+  - markdown
+  - text
+  output_formats:
+  - markdown
+  tags:
+  - requerimientos
+  - arquitectura
+  - sistemas
+  - documentación
+  llm_compatibility:
+  - generic-llm
+- id: repository.initialization
+  name: Inicialización de repositorios
+  path: skills/repository-initialization
+  version: 0.4.0
+  status: draft
+  category: repository-management
+  input_types:
+  - text
+  - markdown
+  - file
+  output_formats:
+  - markdown
+  tags:
+  - git
+  - repositorios
+  - inicializacion
+  - documentacion
+  - pruebas
+  - llm
+  - templates
+  llm_compatibility:
+  - generic-llm
+  - ChatGPT
+  - Claude
+  - Gemini
+  - Copilot
+- id: research.oreilly
+  name: Investigación en O'Reilly
+  path: skills/oreilly-research
+  version: 0.1.0
+  status: experimental
+  category: software
+  input_types:
+  - text
+  - markdown
+  - file
+  output_formats:
+  - markdown
+  tags:
+  - evidence
+  - engineering
+  - oreilly
+- id: engineering.decision.brief
+  name: Resumen de decisión técnica
+  path: skills/create-decision-brief
+  version: 0.1.0
+  status: experimental
+  category: software
+  input_types:
+  - text
+  - markdown
+  - file
+  output_formats:
+  - markdown
+  tags:
+  - evidence
+  - engineering
+  - create
+- id: engineering.delivery.forecast
+  name: Pronóstico de entrega
+  path: skills/forecast-project-delivery
+  version: 0.1.0
+  status: experimental
+  category: software
+  input_types:
+  - text
+  - markdown
+  - file
+  output_formats:
+  - markdown
+  tags:
+  - evidence
+  - engineering
+  - forecast
+- id: engineering.team.structure
+  name: Estructura y coordinación de equipos
+  path: skills/assess-team-structure
+  version: 0.1.0
+  status: experimental
+  category: software
+  input_types:
+  - text
+  - markdown
+  - file
+  output_formats:
+  - markdown
+  tags:
+  - evidence
+  - engineering
+  - assess
+- id: engineering.implementation.compare
+  name: Comparación de implementaciones
+  path: skills/compare-implementation-approaches
+  version: 0.1.0
+  status: experimental
+  category: software
+  input_types:
+  - text
+  - markdown
+  - file
+  output_formats:
+  - markdown
+  tags:
+  - evidence
+  - engineering
+  - compare
+- id: engineering.architecture.review
+  name: Revisión de decisión arquitectónica
+  path: skills/review-architecture-decision
+  version: 0.1.0
+  status: experimental
+  category: software
+  input_types:
+  - text
+  - markdown
+  - file
+  output_formats:
+  - markdown
+  tags:
+  - evidence
+  - engineering
+  - review
+- id: engineering.proposal.review
+  name: Revisión de propuesta técnica
+  path: skills/review-technical-proposal
+  version: 0.1.0
+  status: experimental
+  category: software
+  input_types:
+  - text
+  - markdown
+  - file
+  output_formats:
+  - markdown
+  tags:
+  - evidence
+  - engineering
+  - review
+- id: security.risk.evaluate
+  name: Evaluación de riesgos de seguridad
+  path: skills/evaluate-security-risk
+  version: 0.1.0
+  status: experimental
+  category: software
+  input_types:
+  - text
+  - markdown
+  - file
+  output_formats:
+  - markdown
+  tags:
+  - evidence
+  - engineering
+  - evaluate
+- id: operations.reliability.plan
+  name: Plan de confiabilidad del servicio
+  path: skills/plan-service-reliability
+  version: 0.1.0
+  status: experimental
+  category: software
+  input_types:
+  - text
+  - markdown
+  - file
+  output_formats:
+  - markdown
+  tags:
+  - evidence
+  - engineering
+  - plan
+- id: ai.production.plan
+  name: Plan para IA en producción
+  path: skills/plan-production-ready-ai
+  version: 0.1.0
+  status: experimental
+  category: software
+  input_types:
+  - text
+  - markdown
+  - file
+  output_formats:
+  - markdown
+  tags:
+  - evidence
+  - engineering
+  - plan
+- id: learning.domain.rampup
+  name: Incorporación a dominio y sistema
+  path: skills/plan-domain-rampup
+  version: 0.1.0
+  status: experimental
+  category: software
+  input_types:
+  - text
+  - markdown
+  - file
+  output_formats:
+  - markdown
+  tags:
+  - evidence
+  - engineering
+  - plan
+- id: learning.plan.create
+  name: Plan de aprendizaje técnico
+  path: skills/create-learning-plan
+  version: 0.1.0
+  status: experimental
+  category: software
+  input_types:
+  - text
+  - markdown
+  - file
+  output_formats:
+  - markdown
+  tags:
+  - evidence
+  - engineering
+  - create
+- id: engineering.code.review
+  name: Revisión de cambios de código
+  path: skills/review-code-change
+  version: 0.1.0
+  status: experimental
+  category: software
+  input_types:
+  - text
+  - markdown
+  - file
+  output_formats:
+  - markdown
+  tags:
+  - evidence
+  - engineering
+  - review
+- id: engineering.data.design
+  name: Diseño de cambios de datos
+  path: skills/design-data-change
+  version: 0.1.0
+  status: experimental
+  category: software
+  input_types:
+  - text
+  - markdown
+  - file
+  output_formats:
+  - markdown
+  tags:
+  - evidence
+  - engineering
+  - design
+- id: performance.system.analyze
+  name: Análisis de rendimiento
+  path: skills/analyze-system-performance
+  version: 0.1.0
+  status: experimental
+  category: software
+  input_types:
+  - text
+  - markdown
+  - file
+  output_formats:
+  - markdown
+  tags:
+  - evidence
+  - engineering
+  - analyze
+- id: operations.incident.investigate
+  name: Investigación de incidente técnico
+  path: skills/investigate-technical-incident
+  version: 0.1.0
+  status: experimental
+  category: software
+  input_types:
+  - text
+  - markdown
+  - file
+  output_formats:
+  - markdown
+  tags:
+  - evidence
+  - engineering
+  - investigate
+- id: engineering.test.strategy
+  name: Estrategia de pruebas
+  path: skills/design-test-strategy
+  version: 0.1.0
+  status: experimental
+  category: software
+  input_types:
+  - text
+  - markdown
+  - file
+  output_formats:
+  - markdown
+  tags:
+  - evidence
+  - engineering
+  - design

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Pronóstico de entrega"
+  short_description: "Estima escenarios de entrega e incertidumbre"
+  default_prompt: "Usa $forecast-project-delivery para analizar el caso adjunto y entregar un resultado sustentado y accionable."
+policy:
+  allow_implicit_invocation: true

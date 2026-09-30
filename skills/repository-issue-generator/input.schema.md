@@ -15,3 +15,5 @@ Campos opcionales:
 | labels_available | Etiquetas disponibles. |
 | issue_template | Plantilla de issue existente. |
 | priority_model | Alta/Media/Baja, P0/P1/P2/P3 u otro. |
+
+Opcionalmente acepta hallazgos con IDs y procedencia. Su ausencia no impide usar la skill; no se exige un formato nuevo ni otra skill previa.

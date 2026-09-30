@@ -1,0 +1,6 @@
+interface:
+  display_name: "Desarrollo con evidencia"
+  short_description: "Código, reglas, HU y diseño con contexto y fuentes"
+  default_prompt: "Usa $evidence-guided-development para resolver esta tarea con el contexto del proyecto, fuentes pertinentes y validación."
+policy:
+  allow_implicit_invocation: true

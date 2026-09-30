@@ -1,0 +1,3 @@
+# Only repository validation needs these packages; using the skills does not.
+PyYAML>=6.0.2,<7
+jsonschema>=4.23,<5
