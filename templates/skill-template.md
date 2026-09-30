@@ -1,51 +1,23 @@
 ---
-id: domain.skill.name
-name: Nombre de la skill
-version: 0.1.0
-status: draft
-category: general
-tags:
-  - tag
-input_types:
-  - text
-output_formats:
-  - markdown
-llm_compatibility:
-  - generic-llm
+name: domain-skill-name
+description: "Describe la capacidad y las peticiones concretas que deben activarla. Sustituye este texto antes de incorporar la skill."
+metadata:
+  id: "domain.skill.name"
+  version: "0.1.0"
+  status: "draft"
 ---
 
-# Skill: Nombre de la skill
+# Nombre de la skill
 
-## Propósito
+Define el resultado y los límites específicos de esta capacidad.
 
-Describe qué resuelve esta skill.
+## Procedimiento
 
-## Cuándo usarla
+1. Lee [input.schema.md](input.schema.md) y aprovecha el contexto ya proporcionado.
+2. Lee y aplica [prompt.full.md](prompt.full.md). Añade otras variantes solo si resuelven necesidades distintas y explica aquí cuándo usarlas.
+3. Entrega lo definido en [output.schema.md](output.schema.md).
+4. Comprueba los criterios de [evals/checklist.md](evals/checklist.md).
 
-- Caso 1.
-- Caso 2.
+Sustituye las instrucciones de plantilla por reglas concretas que ayuden al agente a decidir. Mantén los recursos dentro del paquete y no presupongas herramientas ausentes.
 
-## Cuándo no usarla
-
-- Caso 1.
-- Caso 2.
-
-## Entradas esperadas
-
-Ver `input.schema.md`.
-
-## Salida esperada
-
-Ver `output.schema.md`.
-
-## Prompts disponibles
-
-- `prompt.full.md`
-
-## Criterios de calidad
-
-Ver `evals/checklist.md`.
-
-## Historial de cambios
-
-Ver `changelog.md`.
+Para mantenimiento, consulta [changelog.md](changelog.md). Registra nombre visible, categoría, etiquetas y formatos en la entrada correspondiente de `registry.yaml`.

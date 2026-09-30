@@ -1,0 +1,6 @@
+interface:
+  display_name: "Comparación de implementaciones"
+  short_description: "Compara alternativas mediante contratos y riesgos"
+  default_prompt: "Usa $compare-implementation-approaches para analizar el caso adjunto y entregar un resultado sustentado y accionable."
+policy:
+  allow_implicit_invocation: true

@@ -29,7 +29,7 @@ Tu objetivo es mejorar el repositorio sin romper su compatibilidad ni sus contra
 
 Lee estos archivos:
 
-1. `skill.md`
+1. `SKILL.md`
 2. `input.schema.md`
 3. `output.schema.md`
 4. `evals/checklist.md`

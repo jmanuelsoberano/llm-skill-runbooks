@@ -1,6 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Prompt Skill Metadata",
+  "title": "Skillbook Registry Entry",
+  "description": "Catalog entry in registry.yaml. Native SKILL.md frontmatter uses agent-skill.schema.json.",
   "type": "object",
   "required": [
     "id",
@@ -10,9 +11,14 @@
     "category",
     "tags",
     "input_types",
-    "output_formats"
+    "output_formats",
+    "path"
   ],
   "properties": {
+    "path": {
+      "type": "string",
+      "pattern": "^skills/[a-z0-9]+(-[a-z0-9]+)*$"
+    },
     "id": {
       "type": "string",
       "pattern": "^[a-z0-9]+(\\.[a-z0-9]+)+$"

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Plan para IA en producción"
+  short_description: "Planifica evaluación, despliegue y operación de IA"
+  default_prompt: "Usa $plan-production-ready-ai para trabajar sobre mi contexto y entregar una propuesta verificable."
+policy:
+  allow_implicit_invocation: true
+

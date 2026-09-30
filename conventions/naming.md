@@ -1,41 +1,28 @@
 # Convenciones de nombres
 
-## IDs de skills
+## Entrada nativa
 
-Usa IDs en minúsculas con puntos:
+Cada carpeta dentro de `skills/` tiene exactamente un archivo `SKILL.md`. No mantengas una segunda entrada `skill.md`: los nombres colisionan en sistemas sin distinción de mayúsculas.
 
-```text
-meeting.transcript.analysis
-repository.issue.generator
-technical.requirements.extractor
+El frontmatter incluye `name` en kebab-case, idéntico al nombre de la carpeta, y `description` que explica qué hace y cuándo aplica. Los campos de catálogo van bajo `metadata`:
+
+```yaml
+---
+name: meeting-transcript-analysis
+description: Analiza transcripts y notas de reuniones para extraer decisiones y compromisos.
+metadata:
+  id: "meeting.transcript.analysis"
+  version: "1.1.0"
+  status: "stable"
+---
 ```
 
-## Carpetas
+Los IDs con puntos son identificadores del catálogo. El nombre visible en español, categoría, etiquetas y formatos permanecen en `registry.yaml`. `metadata` contiene valores de texto; entrecomilla versiones y otros valores que YAML pueda interpretar como números.
 
-Usa kebab-case:
-
-```text
-meeting-transcript-analysis
-repository-issue-generator
-technical-requirements-extractor
-```
-
-## Prompts
-
-Usa nombres explícitos:
+## Archivos del catálogo
 
 ```text
-prompt.full.md
-prompt.quick.md
-prompt.file-input.md
-prompt.multi-transcript.md
-prompt.chunked-long-transcript.md
-```
-
-## Archivos obligatorios por skill
-
-```text
-skill.md
+SKILL.md
 prompt.full.md
 input.schema.md
 output.schema.md
@@ -43,11 +30,28 @@ evals/checklist.md
 changelog.md
 ```
 
-## Estados de skill
+Estos archivos adicionales son convenciones de Skillbook; el estándar Agent Skills solo exige la entrada nativa. Añade ejemplos y casos de evaluación útiles para verificar la tarea.
+
+Mantén los nombres de variantes explícitos: `prompt.quick.md`, `prompt.file-input.md`, `prompt.multi-transcript.md` o `prompt.chunked-long-transcript.md`.
+
+## Referencias portables
+
+Desde `SKILL.md`, enlaza el procedimiento, los contratos y cada variante, explicando cuándo leerlos. Usa enlaces Markdown convencionales relativos a la raíz de la skill:
+
+```markdown
+Lee [el procedimiento](prompt.full.md).
+Para cambios de datos, consulta [la referencia](references/data-changes.md).
+```
+
+Respeta las mayúsculas exactas, usa barras `/` y conserva los recursos dentro de la carpeta de la skill. No dependas de archivos vecinos al paquete instalado.
+
+El validador revisa enlaces inline y definiciones de enlaces de referencia fuera de bloques de código; no es un parser completo de Markdown. Para recursos operativos usa el formato sencillo mostrado arriba, sin rutas absolutas, `..` ni paréntesis en el nombre del archivo. No valida anclas, enlaces externos ni rutas escritas solo como texto.
+
+## Estados
 
 | Estado | Significado |
 |---|---|
-| draft | En diseño. Puede cambiar. |
-| experimental | Usable, pero no estable. |
-| stable | Contrato estable. Cambios incompatibles requieren versión mayor. |
+| draft | En diseño; puede cambiar. |
+| experimental | Disponible para probar; requiere evaluación. |
+| stable | Contrato estable; cambios incompatibles requieren versión mayor. |
 | deprecated | Ya no se recomienda. |

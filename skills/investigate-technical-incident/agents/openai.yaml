@@ -1,0 +1,7 @@
+interface:
+  display_name: "Investigación de incidente técnico"
+  short_description: "Reconstruye fallos y separa mitigación de causa"
+  default_prompt: "Usa $investigate-technical-incident para trabajar sobre mi contexto y entregar una propuesta verificable."
+policy:
+  allow_implicit_invocation: true
+

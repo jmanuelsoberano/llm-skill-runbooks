@@ -1,0 +1,6 @@
+interface:
+  display_name: "Investigación en O'Reilly"
+  short_description: "Contrasta fuentes y verifica pasajes de O'Reilly"
+  default_prompt: "Usa $oreilly-research para investigar esta afirmación y separar respaldo, objeciones y condiciones."
+policy:
+  allow_implicit_invocation: true

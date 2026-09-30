@@ -32,3 +32,5 @@ La salida debe incluir:
 
 **Preguntas pendientes:**
 ```
+
+Cuando haya evidencia previa, reutilizar sus IDs dentro de Evidencia, Contexto o las secciones existentes según corresponda. Mantener distinción entre requisitos del negocio y recomendaciones externas; no cambiar las secciones obligatorias de este contrato.

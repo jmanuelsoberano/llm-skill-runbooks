@@ -1,0 +1,7 @@
+interface:
+  display_name: "Evaluación de riesgos de seguridad"
+  short_description: "Evalúa amenazas, controles y riesgo residual"
+  default_prompt: "Usa $evaluate-security-risk para trabajar sobre mi contexto y entregar una propuesta verificable."
+policy:
+  allow_implicit_invocation: true
+

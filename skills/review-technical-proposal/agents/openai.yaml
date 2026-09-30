@@ -1,0 +1,6 @@
+interface:
+  display_name: "Revisión de propuesta técnica"
+  short_description: "Revisa coherencia y viabilidad de propuestas"
+  default_prompt: "Usa $review-technical-proposal para analizar el caso adjunto y entregar un resultado sustentado y accionable."
+policy:
+  allow_implicit_invocation: true

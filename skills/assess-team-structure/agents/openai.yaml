@@ -1,0 +1,6 @@
+interface:
+  display_name: "Estructura y coordinación de equipos"
+  short_description: "Revisa ownership y dependencias entre equipos"
+  default_prompt: "Usa $assess-team-structure para analizar el caso adjunto y entregar un resultado sustentado y accionable."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Estrategia de pruebas"
+  short_description: "Prioriza pruebas por comportamiento, contrato y riesgo"
+  default_prompt: "Usa $design-test-strategy para trabajar sobre mi contexto y entregar una propuesta verificable."
+policy:
+  allow_implicit_invocation: true
+

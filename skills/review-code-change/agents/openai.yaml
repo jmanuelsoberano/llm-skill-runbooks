@@ -1,0 +1,6 @@
+interface:
+  display_name: "Revisión de cambios de código"
+  short_description: "Detecta defectos y riesgos en cambios de código"
+  default_prompt: "Usa $review-code-change para analizar el caso adjunto y entregar un resultado sustentado y accionable."
+policy:
+  allow_implicit_invocation: true

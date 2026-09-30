@@ -1,0 +1,6 @@
+interface:
+  display_name: "Revisión de decisión arquitectónica"
+  short_description: "Contrasta decisiones y supuestos arquitectónicos"
+  default_prompt: "Usa $review-architecture-decision para analizar el caso adjunto y entregar un resultado sustentado y accionable."
+policy:
+  allow_implicit_invocation: true

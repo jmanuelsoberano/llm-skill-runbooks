@@ -1,0 +1,7 @@
+interface:
+  display_name: "Plan de aprendizaje técnico"
+  short_description: "Diseña estudio y práctica con progreso verificable"
+  default_prompt: "Usa $create-learning-plan para trabajar sobre mi contexto y entregar una propuesta verificable."
+policy:
+  allow_implicit_invocation: true
+

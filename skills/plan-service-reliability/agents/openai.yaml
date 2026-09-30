@@ -1,0 +1,7 @@
+interface:
+  display_name: "Plan de confiabilidad del servicio"
+  short_description: "Define objetivos, recuperación y observabilidad"
+  default_prompt: "Usa $plan-service-reliability para trabajar sobre mi contexto y entregar una propuesta verificable."
+policy:
+  allow_implicit_invocation: true
+

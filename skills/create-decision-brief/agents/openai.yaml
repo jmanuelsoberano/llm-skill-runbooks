@@ -1,0 +1,6 @@
+interface:
+  display_name: "Resumen de decisión técnica"
+  short_description: "Organiza decisiones con opciones y evidencia"
+  default_prompt: "Usa $create-decision-brief para analizar el caso adjunto y entregar un resultado sustentado y accionable."
+policy:
+  allow_implicit_invocation: true
