@@ -2,7 +2,7 @@
 
 Catálogo para organizar, versionar y reutilizar skills de trabajo con LLMs. El repositorio de GitHub conserva su nombre: `llm-skill-runbooks`.
 
-Las 22 carpetas de `skills/` incluyen una entrada estándar `SKILL.md` y sus recursos. Puedes instalar la carpeta completa en un agente compatible o utilizar sus prompts manualmente. El formato nativo sigue la [especificación de Agent Skills](https://agentskills.io/specification).
+Las 23 carpetas de `skills/` incluyen una entrada estándar `SKILL.md` y sus recursos. Puedes instalar la carpeta completa en un agente compatible o utilizar sus prompts manualmente. El formato nativo sigue la [especificación de Agent Skills](https://agentskills.io/specification).
 
 ## Skills disponibles
 
@@ -30,8 +30,17 @@ Las 22 carpetas de `skills/` incluyen una entrada estándar `SKILL.md` y sus rec
 | [analyze-system-performance](skills/analyze-system-performance/SKILL.md) | 0.1.0 | experimental | Análisis de rendimiento |
 | [investigate-technical-incident](skills/investigate-technical-incident/SKILL.md) | 0.1.0 | experimental | Investigación de incidente técnico |
 | [design-test-strategy](skills/design-test-strategy/SKILL.md) | 0.1.0 | experimental | Estrategia de pruebas |
+| [prepare-audience-presentation](skills/prepare-audience-presentation/SKILL.md) | 0.1.0 | experimental | Audiencia, medio, narrativa y apoyo visual |
 
 El estado refleja la madurez declarada del contenido; incorporar `SKILL.md` no demuestra que todas las salidas de un agente sean correctas.
+
+## Preparar una presentación
+
+`prepare-audience-presentation` guía con pocas preguntas y adapta las recomendaciones de Never Send The Slides a una exposición, grabación o lectura autónoma. No se selecciona por la mera edición de un PowerPoint. El formato se elige según el uso y las herramientas disponibles; la skill no incorpora un exportador propio.
+
+Tras instalar la carpeta completa, puedes invocarla como `$prepare-audience-presentation` en Codex o `/prepare-audience-presentation` en Claude Code. Por ejemplo: «Necesito explicar esta propuesta a seis responsables en veinte minutos para decidir si hacemos un piloto; prepara el guion y recomienda los materiales».
+
+Para incorporar nuevas entregas de la serie, pide actualizar la skill en este repositorio. Su [guía de mantenimiento](skills/prepare-audience-presentation/references/maintenance.md) separa revisión de fuentes, cambios de versión y sincronización de copias instaladas. No se actualiza ni monitoriza la web por sí sola.
 
 ## Conjunto de investigación e ingeniería
 

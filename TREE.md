@@ -157,3 +157,8 @@ llm-skill-runbooks/
 - tests/test_research_suite.py: integridad, conflictos, recuperación y portabilidad.
 - playbooks/research-suite.md y workflows/engineering-research.md: uso y composición.
 - Las nuevas carpetas de skills se enumeran en registry.yaml y README.md.
+
+## Ampliación de comunicación — 2026-10-15
+
+- skills/prepare-audience-presentation/: entrada portable, procedimiento, contratos, referencias de presentación y mantenimiento, ejemplos y evaluaciones.
+- La versión y los formatos de entrega condicionados a las herramientas del cliente se registran en registry.yaml y README.md.
