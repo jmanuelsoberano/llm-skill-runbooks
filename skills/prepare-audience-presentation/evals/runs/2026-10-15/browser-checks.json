@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-15T23:09:11.506Z",
+  "browser": "155.0.8059.79",
+  "checks": [
+    "Apertura mediante file:// con el contexto del navegador sin conexión: una diapositiva visible, estado inicial correcto.",
+    "Los botones siguiente y anterior cambian la diapositiva.",
+    "Flechas, RePág, AvPág, Inicio y Fin funcionan; los límites no desbordan ni reinician la presentación.",
+    "La tecla N y el botón muestran/ocultan notas; el tiempo y el texto cambian junto con la diapositiva.",
+    "Las seis diapositivas tienen una sola vista activa y no presentan desbordamiento horizontal ni contenido fuera de su panel a 1280 × 800; se guardaron seis capturas.",
+    "Vista estrecha de 390 × 844 con notas abiertas: sin desbordamiento horizontal; captura guardada.",
+    "No se registraron errores JavaScript ni solicitudes HTTP/HTTPS; estilos, guion y contenido están incluidos en el HTML, con fuentes del sistema."
+  ],
+  "errors": [],
+  "requests": [
+    "code-review-presentation.html (archivo local; ruta normalizada)"
+  ]
+}

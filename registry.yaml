@@ -394,3 +394,26 @@ skills:
   - evidence
   - engineering
   - design
+- id: communication.presentation.prepare
+  name: Preparar una presentación para una audiencia
+  path: skills/prepare-audience-presentation
+  version: 0.1.0
+  status: experimental
+  category: communication
+  input_types:
+  - text
+  - markdown
+  - file
+  - url
+  output_formats:
+  - markdown
+  - html
+  - pptx
+  - pdf
+  - document
+  tags:
+  - presentations
+  - audience
+  - narrative
+  - visual-design
+  - never-send-the-slides

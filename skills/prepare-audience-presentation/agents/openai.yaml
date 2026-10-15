@@ -1,0 +1,4 @@
+interface:
+  display_name: "Preparar una presentación"
+  short_description: "Audiencia, narrativa y formato con pocas preguntas"
+  default_prompt: "Usa $prepare-audience-presentation para preparar una presentación adaptada a mi audiencia, objetivo y forma de uso."
