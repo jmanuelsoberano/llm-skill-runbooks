@@ -17,9 +17,11 @@ llm-skill-runbooks/
 │   ├── how-to-run-evals.md
 │   ├── migrate-existing-skills.md
 │   ├── prompt-review-process.md
-│   └── use-and-install-agent-skills.md
+│   ├── use-and-install-agent-skills.md
+│   └── windows-app-distribution.md
 ├── references
-│   └── prompt-engineering-sources.md
+│   ├── prompt-engineering-sources.md
+│   └── windows-distribution-schemacraft-case.md
 ├── schemas
 │   ├── agent-skill.schema.json
 │   ├── skill.schema.json
@@ -44,6 +46,24 @@ llm-skill-runbooks/
 │   │   │   ├── data-changes.md
 │   │   │   ├── oreilly.md
 │   │   │   └── requirements-and-docs.md
+│   │   ├── changelog.md
+│   │   ├── input.schema.md
+│   │   ├── output.schema.md
+│   │   ├── prompt.full.md
+│   │   └── SKILL.md
+│   ├── windows-app-distribution
+│   │   ├── agents
+│   │   │   └── openai.yaml
+│   │   ├── evals
+│   │   │   ├── cases.md
+│   │   │   ├── checklist.md
+│   │   │   └── results.md
+│   │   ├── examples
+│   │   │   ├── sample-input.md
+│   │   │   └── sample-output.md
+│   │   ├── references
+│   │   │   ├── distribution-guide.md
+│   │   │   └── schemacraft-case.md
 │   │   ├── changelog.md
 │   │   ├── input.schema.md
 │   │   ├── output.schema.md

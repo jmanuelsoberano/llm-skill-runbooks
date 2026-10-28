@@ -1,0 +1,4 @@
+interface:
+  display_name: "Windows app distribution"
+  short_description: "Plan and verify Windows distribution across channels"
+  default_prompt: "Use $windows-app-distribution to prepare or review this Windows application for its chosen distribution channels."
