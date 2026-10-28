@@ -417,3 +417,21 @@ skills:
   - narrative
   - visual-design
   - never-send-the-slides
+- id: distribution.windows.app
+  name: Windows application distribution
+  path: skills/windows-app-distribution
+  version: 0.1.0
+  status: experimental
+  category: software
+  input_types:
+  - text
+  - markdown
+  - file
+  output_formats:
+  - markdown
+  tags:
+  - windows
+  - distribution
+  - microsoft-store
+  - signing
+  - release
